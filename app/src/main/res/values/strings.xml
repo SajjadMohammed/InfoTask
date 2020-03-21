@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Info</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="nelson_word">It always seems impossible until its done.</string>
+    <string name="app_version">v 1.0</string>
+    <string name="user_info">info</string>
+    <string name="user_name_key">userName</string>
+    <string name="user_password_key">userPassword</string>
+    <string name="log_in_status">logInStatus</string>
+</resources>

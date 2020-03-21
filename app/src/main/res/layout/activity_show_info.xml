@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:background="#21212C"
+    tools:context=".ShowInfoActivity">
+
+    <include layout="@layout/support_toolbar"/>
+
+    <ImageView
+        android:id="@+id/personImage"
+        android:transitionName="pictureTransition"
+        android:scaleType="fitXY"
+        android:src="@drawable/nelson"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:id="@+id/personName"
+        android:transitionName="personTransition"
+        android:textColor="@android:color/darker_gray"
+        android:padding="5dp"
+        android:text="Person Name goes here"
+        android:gravity="end"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/personSaying"
+        android:transitionName="sayingTransition"
+        android:textColor="@android:color/darker_gray"
+        android:padding="10dp"
+        android:text="Person saying goes here"
+        android:gravity="end"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

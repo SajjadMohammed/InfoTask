@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="310dp"
+    android:layoutDirection="ltr"
+    android:minHeight="310dp">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:text="Operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:hint="Full Name"
+        app:errorEnabled="true"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/personName"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:hint="Saying"
+        app:errorEnabled="true"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/personSaying"
+            android:gravity="left"
+            android:inputType="textMultiLine"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/personImage"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+
+    <Button
+        android:id="@+id/browseImage"
+        android:layout_margin="5dp"
+        android:text="Browse for image"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/addPerson"
+            android:text="insert"
+            android:textAllCaps="false"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/updatePerson"
+            android:text="update"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
